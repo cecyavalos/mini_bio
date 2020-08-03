@@ -1,0 +1,54 @@
+$color1:white;
+$color2:grey;
+$color3:black;
+
+body {
+    background: url(https://avante.biz/wp-content/uploads/Wallpapers-gris-claro/Wallpapers-gris-claro2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color1;
+ }
+
+ @mixin ul {
+     text-align: center;
+     
+ }
+ ul{	
+   @include ul;           
+     li{
+         list-style-type: none;
+        a{
+            color:$color1;
+            font-size: 20px;
+            text-decoration: none;
+              
+          }
+    }
+}
+
+.imagentop{
+    padding-top: 60px;
+}
+.video{
+ text-align: center;
+}
+
+@mixin parrafo {
+    color:$color1;
+    padding: 40px;
+}
+
+p{
+ @include parrafo
+
+}
+
+@mixin footer {
+    background-color:$color3;
+    height: 200px;
+    padding:30px;
+    
+}
+footer{
+    @include footer
+}

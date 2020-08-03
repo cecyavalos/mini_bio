@@ -1,0 +1,8 @@
+*.log
+package.json
+package-lock.json
+node_modules
+img
+.jpg
+
+
